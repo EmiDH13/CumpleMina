@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBlue: '#507ad2'
+        customBlue: '#d25050'
       },
       screens: {
         xs: '380px',

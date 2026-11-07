@@ -97,7 +97,7 @@ function Cake() {
       </p>
       <Link to="/present" className="flex justify-center items-center mt-8">
         <p className="px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center">
-          Next Page
+          Pagina Siguiente
         </p>
       </Link>
     </motion.div>
