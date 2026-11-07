@@ -1,9 +1,8 @@
-import React from 'react';
 import '../../index.css'
 const CakeSVG = () => {
   return (
     <div style={{ transform: 'translateY(-90px)' }}>
-    <svg id="cake" version="1.1" x="0px" y="0px" width="400px" height="1000px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+    <svg id="cake" version="1.1" x="0px" y="0px" width="400px" height="1000px" viewBox="0 0 200 500" enableBackground="new 0 0 200 500" xmlSpace="preserve">
     <path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
 		c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
         <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.3s" fill="freeze" values="

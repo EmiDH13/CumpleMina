@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Cake() {
   // You may want to tweak these audio codes more to your liking.
   const [candlesBlownOut, setCandlesBlownOut] = useState(false);
-  const [micPermissionGranted, setMicPermissionGranted] = useState(false);
+  const [, setMicPermissionGranted] = useState(false);
 
   useEffect(() => {
     let audioContext;
@@ -85,34 +85,24 @@ function Cake() {
           />
         )}
         {candlesBlownOut && (
-          <motion.div
-            className="absolute top-20 text-white text-3xl font-bold z-50"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <svg width="800" height="200" viewBox="0 0 400 200">
-              <defs>
-                <path
-                  id="curve"
-                  d="M50,150 Q200,50 350,150"
-                  fill="transparent"
-                  stroke="white"
-                />
-              </defs>
-              <text fontSize="40" fill="white" textAnchor="middle">
-                <textPath href="#curve" startOffset="50%">
-                  Happy Birthday!
-                </textPath>
-              </text>
-            </svg>
-            <Link to="/present" className="flex justify-center items-center">
-              <p className="absolute top-[30rem] xs:top-[36rem] s:top-[40rem] px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center ">
-                Next Page
-              </p>
-            </Link>
-          </motion.div>
-        )}
+  <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[85%] max-w-[380px] z-50">
+    <motion.div
+      className="text-white text-center"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
+      <p className="text-3xl font-bold leading-snug">
+        ¡Feliz Cumpleaños Princesa! (˶˃ ᵕ ˂˶)
+      </p>
+      <Link to="/present" className="flex justify-center items-center mt-8">
+        <p className="px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center">
+          Next Page
+        </p>
+      </Link>
+    </motion.div>
+  </div>
+)}
         <div className="relative z-10">
           <div className="absolute -top-48 left-1/2 transform -translate-x-1/2">
             <div className="candle">
@@ -128,7 +118,7 @@ function Cake() {
                       }}
                       className="block -translate-x-[60px] translate-y-[105px] -rotate-[30deg] text-gray-200 text-xl "
                     >
-                      blow
+                      brillito
                     </motion.div>
                     <motion.div
                       animate={{ opacity: [0, 0.25, 0] }}
@@ -139,7 +129,7 @@ function Cake() {
                       }}
                       className="block translate-x-10 translate-y-[80px] rotate-[30deg] text-gray-200 text-xl"
                     >
-                      blow
+                      brillito
                     </motion.div>
                   </div>
                   <div>

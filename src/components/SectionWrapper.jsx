@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 
 const SectionWrapper = ({ children }) => {

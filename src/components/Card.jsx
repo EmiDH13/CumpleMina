@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../assets/css/card.css";
 import { Link } from 'react-router-dom'; 
 
@@ -36,24 +36,26 @@ function Card() {
       <div id="card" className={`${cardClass}`} onClick={toggleCard}>     
         <div id="card-inside">
           <div className="wrap">
-            <p>Happy Birthday, John Doe!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque delectus dolore recusandae eveniet dicta. Corrupti.</p>
+            <p>Feliz Cumpleaños, Mina! (੭ˊᵕˋ)੭🎂</p>
+            <p>Gracias por dejarme pasar este dia especial a tu lado, por darme la oportunidad de que lo pasemos juntos y disfrutarlo unidos. ❤️</p>
             <p>
-              I hope you have a very blessed birthday!
+              ¡Espero que te la pases muy bien en tu cumpleaños!
             </p>
             <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cum.
+             Y que siempre, pero siempre, sepas que me siento muy afortunado de tenerte en mi vida. ❤️
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Gracias por haber nacido y hacer mi vida más especial con tu existencia. ❤️
             </p>
-            <p className="signed">Jane Doe</p>
+            <p className="signed">Milito ❤️</p>
           </div>
         </div>
 
         <div id="card-front">
           <div className="wrap">
-            <h1>Happy Birthday!</h1>
+            <h1>¡Feliz Cumpleaños Amor de Mi Vida!
+              (づ˶•༝•˶)づ♡
+            </h1>
           </div>
         </div>
     </div>
@@ -67,7 +69,7 @@ function Card() {
         transition={{duration: 1.2}}> 
         <Link to ='/cake'>
         <p className="-mt-[4rem] px-7 py-3 bg-customBlue text-white font-medium text-base rounded-full hover:bg-blue-600">
-            Next Page
+            Pagina Siguiente
           </p>
         </Link>
             
